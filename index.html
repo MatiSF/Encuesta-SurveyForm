@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulario de encuesta</title>
+</head>
+<body class="fondo">
+  <h1 id="title"> Encuesta electoral Argentina </h1>
+  <p id="description">Encuesta oficial, desarrollada para las elecciones presidenciales argentinas del año 2023</p>
+  <form id="survey-form">
+    <label id="name-label">Ingrese su nombre completo: <input placeholder="nombre y apellido" id="name" type="text" required></label>
+    <label id="email-label">Ingrese su email: <input placeholder="aaaa@aaaa.com" id="email" type="email" required></label>
+    <label id="number-label">Indique su edad: <input placeholder="debe ser mayor de 16 años" id="number" type="number" min="16" max="120" required></label>
+    <label for="dropdown">Que documento posee?
+          <select id="dropdown" name="dropdown">
+            <option value="">(seleccione una)</option>
+            <option value="1">DNI</option>
+            <option value="2">Libreta de Enrolamiento</option>
+            <option value="1">Libreta Civica</option>
+          </select>        
+     <p class="sexo">Por favor indique su genero:</p>    
+        <label for="genero"><input id="m" type="radio" name="genero" class="inline" value="m" /> Masculino. </label>
+        <label for="f"><input id="f" type="radio" name="genero" class="inline" value="f"/> Femenino. </label> 
+          <label for="o"><input id="o" type="radio" name="genero" class="inline" value="o"/> Otro </label> 
+       <br> 
+        <p class="primera"> Esta es su primera eleccion? </p>    
+        <label for="front"><input id="front" type="radio" name="voto" class="inline" value="uno" /> Primera vez que voto. </label>
+        <label for="back"><input id="back" type="radio" name="voto" class="inline" value="dos"/> He votado anteriormente. </label> <br>      
+    <fieldset class="opciones">
+     <p class="candidato">Seleccione su candidato para las proximas elecciones:</p>
+     <label><input name="prefer" value="PRO" type="checkbox" class="input-checkbox">Juntos por el Cambio</label>
+        <label><input name="prefer" value="PJ" type="checkbox" class="input-checkbox">Frente de Todos</label>
+        <label><input name="prefer" value="LLA" type="checkbox" class="input-checkbox">La Libertad Avanza</label>
+        <label><input name="prefer" value="Frente-de-izquierda" type="checkbox" class="input-checkbox">Frente de Izquierda</label>
+     </fieldset> 
+     <p class="comentarios"> Dejanos un comentario...</p>
+     <textarea id="comments" class="input-textarea" name="comment" placeholder="Deje su comentario aqui..."></textarea>
+     <button id="submit">Enviar</button> 
+  </form>
+</body>
+</html>

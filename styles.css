@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f1f1f1;
+  }
+  
+  /* Encabezado */
+  #title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #description {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  /* Formulario */
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Etiquetas y campos de entrada */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  /* Botón de envío */
+  button#submit {
+    display: block;
+    width: 100%;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para opciones múltiples */
+  .opciones label,
+  .primera label {
+    display: block;
+    margin-right: 10px;
+  }
+  
+  .opciones input[type="checkbox"],
+  .primera input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  /* Estilos para género */
+  .sexo label,
+  .sexo input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  /* Comentarios */
+  .comentarios label,
+  .comentarios textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de colores */
+  .fondo {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilos de media consulta para pantallas pequeñas */
+  @media screen and (max-width: 600px) {
+    form {
+      padding: 20px;
+    }
+  
+    #title {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  
+    #description {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  
